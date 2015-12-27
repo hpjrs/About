@@ -1,0 +1,46 @@
+p.telephone{
+    color: #e30b11;
+}
+.telephone span{
+    color: #9096AC;
+}
+#nav .menu,.mainnav ul li a{
+    color: white;
+}
+#nav .menu .submenu_wrap:hover>a{
+    border-top: 1px solid;
+    background-color: white !important;
+    color: #0674BD;
+}
+#nav .wrap .mainnav ul li a:hover{
+    background-color: #03527D;
+}
+#nav .menu>a:hover{
+    background-color: #03527D;
+}
+.menu dl{
+    color: black;
+}
+.menu dl dd span a{
+    color: #b2b2b2;
+}
+.menu dl dd span a:hover{
+    color: red;
+    text-decoration:underline;
+}
+.menu .submenu{
+    background:white
+}
+.footer_link a,.friendly_link a,span{
+    color: #99A1A6;
+}
+.footer_link a:hover,.friendly_link a:hover{
+    color: #e30b11;
+    text-decoration:underline;
+}
+.product a,.time a{
+    color:#e30b11 ;
+}
+a.here{
+    background-color: #03527D;
+}
