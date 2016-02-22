@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>淡隐淡入</title>
+    <style type="text/css">
+        *{margin:0;padding:0;}
+        .scroll{width: 500px;height: 188px;position: relative;margin: 0 auto;overflow: hidden}
+        .img-wraper{width: 2000px;position: absolute;left:0}
+        .img-wraper img{float: left}
+        .items{position:absolute;right: 10px;bottom: 10px}
+        .items ul li{float: left;width:18px;height:18px;background: url("img/dot.png") no-repeat;margin-left:3px;text-indent: -999em}
+        .prev,.next{width: 41px;height: 63px;display: block;position: absolute;top: 60px;cursor: pointer}
+        .prev{left:10px}
+        .next{right:10px}
+        .prev{background: url("img/prev.png") no-repeat}
+        .next{background: url("img/next.png") no-repeat}
+        .hover{background: url("img/hover.png") no-repeat !important;}
+    </style>
+</head>
+<body>
+<div class="scroll">
+    <div class="img-wraper">
+    <img src="img/1.jpg" alt="1">
+    <img src="img/2.jpg" alt="1">
+    <img src="img/3.jpg" alt="1">
+    <img src="img/4.jpg" alt="1">
+    </div>
+    <div class="items">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+    <div class="switch">
+        <span class="prev"></span>
+        <span class="next"></span>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        var adTimer;
+        var index=0;
+        var $scroll=$(".scroll");
+        var $img=$scroll.find(".img-wraper");
+        var len=$img.find("img").length;
+        $(".items ul li").hover(function () {
+            index=$(".items ul li").index(this);
+            changeImg(index);
+        }).eq(0).mouseover();
+        $(".next").click(function () {
+            index++;
+            if(index==len){
+                index=0
+            }
+            changeImg(index)
+        });
+        $(".prev").click(function () {
+            index--;
+            if(index==-1){
+                index=len-1
+            }
+            changeImg(index);
+        });
+        $scroll.hover(function () {
+            if(adTimer){
+                clearInterval(adTimer)
+            }
+        },function(){
+            adTimer=setInterval(function () {
+                $(".next").click()
+            },2000)
+        }).trigger("mouseleave")
+    });
+    function changeImg(index){
+        var $img_a=$(".img-wraper img");
+        $img_a.eq(index).stop(true,true).fadeIn().siblings().fadeOut();
+        $(".items ul li").eq(index).addClass("hover").siblings().removeClass("hover")
+    }
+</script>
+</body>
+</html>

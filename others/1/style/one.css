@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: '微软雅黑';
+}
+body{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+#imgScroll,#main,#content,#column,#footer{
+    width:1350px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+p{
+    font-size: 14px;
+}
+
+/*   header   */
+#header{
+    width: 100%;
+    height:108px;
+    background-color: black;
+}
+#header>img{
+    margin:27px 3% 0 5%;
+    float: left;
+}
+#header .nav ul li{
+    float: left;
+    padding-left:1.4%;
+}
+#header .nav a{
+    line-height: 108px;
+    color: white;
+    font-size: 1.3em;
+}
+#header .search img{
+    position: absolute;
+    left: 89%;
+    top: 46px;
+    cursor: pointer;
+}
+#header .search input{
+    position: absolute;
+    left: 77%;
+    top: 48px;
+}
+
+/*   main   */
+#main{
+    height: 632px;
+}
+#main img{
+    position: absolute;
+    width: 1400px;
+    height: 632px;
+}
+#main p{
+    font-size: 14px;
+    position: absolute;
+    left: 740px;
+    top:412px;
+    color: white;
+    padding: 13px 25px 13px 25px;
+    background-color: black;
+}
+
+/*   imgScroll   */
+#imgScroll h1{
+    font-size: 47px;
+    text-align: center;
+    margin:140px 0 10px 0;
+}
+#imgScroll p{
+    text-align: center;
+    font-size:14px;
+    margin-bottom:20px;
+}
+#imgScroll>img{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+}
+.scroll-wraper{
+    width: 1350px;
+    height: 545px;
+    position:relative;
+}
+.scroll{
+    width: 1730px;
+    height: 545px;
+    margin: 0 auto;
+    position: absolute;
+    left: -190px;
+}
+.opac{
+    display: block;
+    position:absolute;
+    width:346px;
+    top: 98px;
+    height: 400px;
+    background-color: #fff;
+}
+.opc1{
+    left:83px;
+    opacity: 0.8;
+    filter: alpha(opacity=20);
+}
+.opc2{
+    left:430px;
+    opacity: 0.4;
+    filter: alpha(opacity=80);
+}
+.opc3{
+    left:1120px;
+    opacity: 0.4;
+    filter: alpha(opacity=80);
+}
+.opc4{
+    right:83px;
+    opacity: 0.8;
+    filter: alpha(opacity=20);
+}
+.scroll img{
+    width: 166px;
+    height: 395px;
+    margin:100px 90px 50px 90px;;
+    float: left;
+}
+.switch-left,.switch-right{
+    position: absolute;
+    text-indent: -999em;
+    width: 120px;
+    height: 220px;
+    cursor: pointer;
+    top: 410px;
+}
+.switch-left{
+    left: 20px;
+    background: url("../img/prev.png") no-repeat;
+}
+.switch-right{
+    right: 20px;
+    background: url("../img/next.png") no-repeat;
+}
+.scroll-1{
+    margin-left: -190px;
+}
+p.p-2{
+    font-size: 24px!important;
+    margin-bottom:100px!important;
+}
+
+/*   content   */
+#content h1,#content p{
+    color: white;
+}
+#content h1{
+    width: 440px;
+    position: absolute;
+    top:280px;
+    left: 210px;
+    font-size: 47px;
+}
+#content .introduce{
+    position: absolute;
+    top: 430px;
+    left: 210px;
+    width:580px;
+}
+.introduce p{
+    padding-top: 30px;
+}
+/*   column   */
+#column h1{
+    font-size: 47px;
+    text-align: center;
+    margin:90px 0 20px 0;
+}
+#column>img{
+    display: block;
+    height: 30px;
+    width: 30px;
+    position:relative;
+    left: 50%;
+    margin:0 0 100px -15px;
+}
+#column .dl-wrap{
+    margin: 0 auto;
+    width: 924px;
+}
+#column dl{
+    float: left;
+    width: 216px;
+    margin-left:15px;
+}
+#column dd{
+    font-size: 15.6px;
+    margin-bottom: 160px;
+}
+
+/*   footer   */
+#footer{
+    height: 382px;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+#footer .wrap{
+    width: 924px;
+    margin: 0 auto;
+    position: relative;
+}
+#footer dl{
+    float: left;
+    margin-left: 70px;
+}
+.dl-1{
+    margin-left: 0 !important;
+}
+#footer dl dt{
+    font-size: 17px;
+    margin:50px 0 30px 0;
+}
+#footer dl dd{
+    font-size: 14px !important;
+}
+#footer dl img{
+    display: block;
+    margin-top:40px;
+}
+#footer .footer-p-1{
+    position: absolute;
+    left: 0;
+    top: 290px;
+}
+#footer .footer-p-2{
+    padding-left: 20px;
+    position: absolute;
+    right: 0;
+    top: 290px;
+    background: url("../img/Amc.png") no-repeat 1px;
+}

@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: '微软雅黑';
+    list-style: none;
+}
+body{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+#header,#main,#footer{
+    width:100%;
+    overflow: hidden;
+    margin:0 auto;
+}
+.wrap{
+    width:980px;
+    margin: 0 auto;
+}
+/*header*/
+#header{
+    height: 534px;
+    position: relative;
+}
+#header .header-wrap{
+    position: relative;
+}
+#header .imgScroll>img{
+    width: 1600px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -800px;
+}
+#header .header-wrap>img{
+    position:absolute;
+    top:40px;
+}
+.header-wrap .nav{
+    z-index: 10;
+    position:relative;
+    top: 52px;
+    left:295px;
+}
+.header-wrap .nav ul li{
+    float: left;
+    color: white;
+    font-size: 15px;
+    margin-left: 26px;
+    cursor: pointer;
+}
+#header h1{
+    font-size: 64px;
+    position: absolute;
+    top:230px;
+    left:320px;
+    color: white;
+    font-style:oblique;
+    text-shadow: 2px 3px 4px #575757;
+}
+#header p{
+    font-size: 18px;
+    position: absolute;
+    top:320px;
+    left:330px;
+    color: white;
+}
+#header .items{
+    position: absolute;
+    top:480px;
+    right:30px;
+}
+#header .items ul li{
+    float: left;
+    width: 18px;
+    height: 19px;
+    background: url("../img/dot.png") no-repeat;
+    text-indent: -999em;
+    margin-left: 10px;
+}
+.hover{
+    background: url("../img/dot%20hover.png") no-repeat !important;
+}
+/*main*/
+#main{
+    background-color: #f1f1f1;
+    box-shadow:1px -5px 5px #ccc inset;
+}
+#main .wrap .notice{
+    height: 27px;
+    display: block;
+    margin-top:20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: white;
+    overflow: hidden;
+    position: relative;
+}
+#main .wrap .notice p.notice-p-1{
+    float: left;
+    font-size: 14px;
+    line-height: 27px;
+    padding:0 20px 0 20px;
+    border-right: 1px solid #ccc;
+    box-shadow: 1px 1px 3px #ccc;
+}
+#main .wrap .notice ul{
+    float: left;
+    margin-left:20px;
+}
+#main .wrap .notice ul li{
+    font-size: 12px;
+    margin-top:7px;
+}
+#main .wrap .notice ul li span{
+    margin-left: 40px;
+}
+#main .wrap .notice p.phone{
+    position: absolute;
+    right: 20px;
+    padding-left: 24px;
+    font-size: 19px;
+    line-height: 27px;
+    color: #1b9589;
+    background: url("../img/tel.png") no-repeat 0 4px;
+}
+#main .introduce{
+    margin-top: 30px;
+}
+#main .introduce>div{
+    float: left;
+}
+div.company{
+    width:280px;
+}
+div.news{
+    width:380px;
+    margin-left: 20px;
+}
+div.contact{
+    width:280px;
+    margin-left: 20px;
+}
+.news h2,.company h2,.contact h2{
+    width: 280px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    color: #0d486e;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #bdbdbd;
+    margin-bottom: 10px;
+    padding-left: 14px;
+    position: relative;
+}
+.introduce h2 span{
+    position: absolute;
+    right:15px;
+    top: 0px;
+}
+.introduce .company img{
+    border: 3px solid white;
+    margin-bottom: 12px;
+}
+.company p{
+    font-size: 12px;
+    text-indent:2em;
+    position: relative;
+    line-height: 27px;
+}
+.company p span{
+    position: absolute;
+    right: 0;
+    color: #0a5f93;
+}
+.news img{
+    float: left;
+    border: 3px solid white;
+    margin-bottom: 12px;
+}
+.news h2{
+    width: 380px !important;
+}
+.news h3{
+    padding: 10px 0 0 160px;
+    color: #0a5f93;
+    font-size: 14px;
+}
+.news  p{
+    padding:5px 0 0 160px;
+    color: #959698;
+    position: relative;
+}
+.news  p span{
+    display: block;
+    width: 54px;
+    height: 18px;
+    background: #0a5f93;
+    color: white !important;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    line-height: 18px;
+}
+.news ul{
+    clear: both;
+}
+.news ul li{
+    line-height: 27px;
+    position: relative;
+    font-size: 12px;
+}
+.news ul li span{
+    position: absolute;
+    right: 0;
+}
+.contact>img{
+    margin:15px 0 0 14px;
+}
+.contact p{
+    height: 23px;
+    line-height: 23px;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 62px;
+    font-size: 12px;
+}
+.contact p img{
+    position: absolute;
+    cursor: pointer;
+}
+.case{
+    clear: both;
+    margin:37px 0 70px 0;
+    position: relative;
+}
+.case h2{
+    width: 980px;
+    line-height: 44px;
+    background: url("../img/gcheng.png") no-repeat;
+    font-size: 16px;
+    color: #0d486e;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.img-list-wrap{
+    width:816px;
+    height: 157px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    margin-left: -408px;
+}
+.case .img-list{
+    position: absolute;
+    width: 2448px;
+}
+.case .img-list ul li{
+    float: left;
+}
+.case .img-list ul li p{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+ }
+.case .img-list ul li img{
+    border: 2px solid white;
+    margin-left: 12px;
+}
+.switch p{
+    position: absolute;
+    top:105px;
+    text-indent: -999em;
+    width: 40px;
+    height: 63px;
+    cursor: pointer;
+}
+p.prev{
+    background: url("../img/prev.png") no-repeat;
+}
+p.next{
+    background: url("../img/next.png") no-repeat;
+    right: 0;
+}
+/*footer*/
+#footer{
+    height: 120px;
+    background: white;
+    text-align: center;
+    font-size: 12px;
+}
+#footer ul{
+    margin:27px 0 0 356px;
+}
+#footer ul li{
+    text-align: center;
+    float: left;
+    padding:0 6px 0 6px;
+    border-left: 1px solid #ccc;
+}
+.li-one{
+    border: none !important;
+}
+#footer p{
+    clear: both;
+    padding-top: 14px;
+}

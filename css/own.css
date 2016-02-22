@@ -3,6 +3,7 @@
     padding: 0;
     border: 0;
 }
+a{text-decoration: none}
 body{
     font: 62.5%/1.6  "微软雅黑";
 }
@@ -37,12 +38,13 @@ body{
     font-size: 3em;
     color: white;
     opacity: 0;
+    filter: alpha(opacity=0);
 }
 .section1 p.p-left{
-    margin-left:-300em;
+    margin-left:20em;
 }
 .section1 p.p-right{
-    margin-left:300em;
+    margin-left:-20em;
 }
 
     /*  section2  */
@@ -65,6 +67,7 @@ body{
     padding: 0.2em 0.5em 0.2em 0.5em;
     margin: 0.4em;
     border-radius: 4px;
+    cursor: pointer;
 }
 .section2 .tag p.familiar{
     background-color: #0aa592;
@@ -195,7 +198,7 @@ p.place-2{
     -o-animation:opac 1.5s infinite;-o-animation-delay:.6s;
     -ms-animation:opac 1.5s infinite;-ms-animation-delay:.6s;
 }
-.ripple{width:60px;height:60px;position:absolute;top:60px; left:398px;}
+.ripple{width:60px;height:60px;position:absolute;top:60px; left:398px;cursor: pointer}
 .ripple *{border:2px solid #fff;position:absolute;border-radius:50%;}
 .ripple-2{position:absolute;top:60px;left:737px}
 
@@ -213,18 +216,17 @@ p.place-2{
 }
 .demo-wrap{
     width: 720px;
-    position: absolute;
-    left:50%;
-    margin-left: -360px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 .demo{
     width: 200px;
     height: 200px;
+    text-align: center;
     position: relative;
     -webkit-perspective:800;
     float: left;
     margin:10px 20px 10px 20px;
-    text-align: center;
     box-shadow: 4px 0 13px #07342b;
 }
 .film{
@@ -239,19 +241,34 @@ p.place-2{
     -webkit-backface-visibility: hidden;
     width: 200px;
     height: 200px;
-    background: #0a8875;
+    display:table;
+    background: #0a937d;
     border-radius: 50%;
 }
-.face a{
+.face>a{
     line-height:200px;
     text-align: center;
     font-size:30px;
     text-decoration: none;
     color: white;
 }
+.face P{
+    width: 160px;
+    position: absolute;
+    top: 50px;
+    left:50%;
+    margin-left: -80px;
+    font-size: 12px;
+}
+.face P>a{
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #de1116;
+}
 .back {
     -webkit-transform: rotateY(180deg);
-    background: #76d69d;
+    background: #87edb1;
     width: 200px;
     height: 200px;
 }

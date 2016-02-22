@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>文字悬停提示</title>
+    <style>
+        *{ margin:0; padding:0;}
+        ol{margin: 0 auto;width: 500px;}
+        li{padding: 10px;position: relative}
+        #tooltip{position: absolute;background: #ccc;padding: 2px}
+    </style>
+</head>
+<body>
+<ol>
+    <li><a href="#" title="人社部驳养老金“缴满15年没必要再缴”:长缴更划算">人社部驳养老金“缴满15年没必要再缴”:长缴更划算</a></li>
+    <li><a href="#" title="麦斯米兰2016全国巡回演唱会长沙站将开启 ">麦斯米兰2016全国巡回演唱会长沙站将开启 </a></li>
+    <li><a href="#" title="“打扰一下”男女双主唱摇滚乐团长沙巡演将开启">“打扰一下”男女双主唱摇滚乐团长沙巡演将开启</a></li>
+    <li> <a href="#" title="常德查扣一“任性”越野车 违法59起扣117分">常德查扣一“任性”越野车 违法59起扣117分</a></li>
+    <li><a href="#" title="“音乐、美术”首次成通道中考必考科目">“音乐、美术”首次成通道中考必考科目</a> </li>
+    <li> <a href="#" title="情侣领证结婚证件打成离婚编号 新人亲友被气哭">情侣领证结婚证件打成离婚编号 新人亲友被气哭</a></li>
+    </li>
+</ol>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        var x = 10;
+        var y = 20;
+        $("a").mouseover(function(e){
+            this.myTitle = this.title;
+            this.title = "";
+            var tooltip = "<div id='tooltip'>"+ this.myTitle +"</div>";
+            $("body").append(tooltip);
+            $("#tooltip").css({
+                        "top": (e.pageY+y) + "px",
+                        "left": (e.pageX+x)  + "px"
+                    }).show("fast");
+        }).mouseout(function(){
+            this.title = this.myTitle;
+            $("#tooltip").remove();
+        }).mousemove(function(e){
+            $("#tooltip")
+                    .css({
+                        "top": (e.pageY+y) + "px",
+                        "left": (e.pageX+x)  + "px"
+                    });
+        });
+    })
+</script>
+</body>
+</html>

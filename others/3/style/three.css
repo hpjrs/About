@@ -1,0 +1,318 @@
+*{
+    margin:0;
+    padding:0;
+    border: none;
+}
+body{
+    background: url("../img/back.png");
+    font-family: "微软雅黑";
+    z-index: -1;
+}
+#header,.content-inside,#main,.footer-inside,.link-inside,.record-inside{
+    width: 960px;
+    margin: 0 auto;
+}
+ol,ul{
+    list-style: none;
+}
+/*link*/
+#link{
+    height: 38px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #1a1a21;
+    color: white;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+}
+#link .link-inside{
+    position: relative;
+}
+#link p,#link span{
+    font-size: 12px;
+    line-height: 38px;
+}
+#link p{
+    margin-left: 10px;
+    float: left;
+}
+#link span{
+    margin-left: 230px;
+    float: left;
+}
+#link ol li{
+    float: left;
+    margin:10px 0 0 7px;
+}
+/*header*/
+#header{
+    height: 100px;
+    position: relative;
+}
+#header>img{
+    margin:21px 0 0 10px;
+    float: left;
+    position: absolute;
+}
+#header .nav{
+    position: absolute;
+    right: 0;
+}
+#header .nav>ul>li{
+    display: block;
+    float: left;
+    font-size: 18px;
+    height:65px;
+    margin:35px 0 0 45px;
+    position: relative;
+    cursor: pointer;
+}
+#header .nav>ul>li span{
+    display: block;
+    font-size: 11px;
+}
+#header .nav>ul>li>ul{
+    position: absolute;
+    top:65px;
+    z-index: 10;
+    display: none;
+}
+#header .nav>ul>li>ul li{
+    text-align: center;
+    border-bottom: 1px solid #bebebe;
+    font-size: 13px;
+    line-height:35px;
+    width: 185px;
+    height: 35px;
+    background-color:#e6e6e6;
+    color: #535252;
+    opacity: 0.9;
+    filter:alpha(opacity=90);
+}
+#header .nav>ul>li:hover ul{
+    display: block;
+}
+#header .nav>ul>li>ul>li:hover{
+    background-color: #cacaca;
+}
+/*content*/
+#content{
+    width:100%;
+    height:400px;
+    overflow: hidden;
+    position: relative;
+}
+#content>img{
+    width: 1680px;
+    position: absolute;
+    left: 50%;
+    margin-left: -840px;
+}
+#content .content-inside{
+    position: relative;
+}
+#content .introduce{
+    position: absolute;
+    top:170px;
+    left: 0;
+    display: block;
+    background-color: #d2d2d2;
+    opacity: 0.9;
+    filter:alpha(opacity=90);
+    width: 632px;
+    height: 162px;
+    padding: 18px 4px 29px 21px;
+}
+#content .introduce h2{
+    font-size: 24px;
+    margin:0 0 16px 10px;
+}
+#content .introduce p{
+    font-size: 12px;
+    line-height: 18px;
+}
+/*main*/
+#main .portfolio-all{
+    display: block;
+    width: 230px;
+    height: 230px;
+    background-color: #f0eeee;
+    float: left;
+    margin: 18px 13px 38px 0;
+    text-align: center;
+}
+.portfolio-all img{
+    margin: 23px 0 22px 0;
+}
+.portfolio-all h3{
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+.portfolio-all p{
+    font-size: 12px;
+}
+.portfolio-4{
+    margin-right: 0 !important;
+}
+.portfolio-all:hover p{
+    background-color: #2b2b31;
+    color: white;
+}
+p.text{
+    clear: both;
+    font-size: 18px;
+    padding: 11px 0 11px 10px;
+    background-color: #e0dede;
+    font-style: italic;
+    margin-bottom: 37px;
+}
+.recentPosts-all{
+    width: 230px;
+    float: left;
+    margin-right: 13px;
+    position: relative;
+}
+.recentPosts-4{
+    margin-right: 0 !important;
+}
+.recentPosts-all h2{
+    font-size: 18px;
+    margin:5px 0 13px 10px;
+}
+.recentPosts-all p{
+    font-size: 12px;
+    margin-left: 10px;
+}
+#main>a img{
+    margin:26px 0 26px 0;
+    cursor: pointer;
+}
+/*footer*/
+#footer{
+    width: 100%;
+    background:#1c1c20;
+    color: white;
+}
+.footer-insider{
+    position: relative;
+    height: 390px;
+    width: 960px;
+}
+#footer h2{
+    font-size: 20px;
+    margin: 30px 0 18px 0;
+}
+#footer p{
+    font-size:12px;
+}
+.flickr{
+    width: 325px;
+    float: left;
+    margin-right:70px;
+}
+.flickr p{
+    margin-bottom: 24px;
+}
+.flickr .Gallery a{
+    position: relative;
+    z-index: 1;
+    width: 75px;
+    height: 75px;
+}
+.flickr .Gallery img{
+    width: 72px;
+    height: 72px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+.flickr>a img{
+    margin:25px 0 0 125px;
+}
+.contactForm{
+    float: left;
+    margin-right:70px;
+}
+.contactForm input,.contactForm textarea{
+    display: block;
+    background-color: #2b2b2f;
+    border-radius: 3px;
+    border: 1px solid #636369;
+    margin-bottom: 3px;
+}
+.contactForm input{
+    height: 35px;
+    width: 220px;
+}
+input.submit{
+    width: 130px;
+    height: 30px;
+    margin:1px 0 0 44px;
+}
+.contactForm textarea{
+    height: 114px;
+    width: 220px;
+}
+.LatestPosts{
+    float: left;
+}
+.post{
+    display: block;
+    width:270px;
+    clear: both;
+    margin-bottom: 20px;
+}
+.post h3{
+    font-size:14px;
+    color: #41a8d3;
+}
+.post p{
+    line-height: 19px;
+    letter-spacing: -1px;
+}
+.post img{
+    float: left;
+}
+.record{
+    clear: both;
+    height: 30px;
+    background-color: black;
+}
+.record-inside{
+    position: relative;
+}
+.record p{
+    line-height: 30px;
+}
+.record ul{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+}
+.record ul li{
+    float: left;
+    margin-left:15px;
+    font-size: 12px;
+    line-height: 30px;
+}
+/*遮罩层*/
+.img-wraper{
+    position: relative;
+}
+.img-mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.mask{
+    position: absolute;
+    width: 76px;
+    height:76px;
+    left:0;
+    top:-59px;
+    background-color: #000000;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    z-index:3;
+}

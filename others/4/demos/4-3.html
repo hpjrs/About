@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>整版轮播</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        li{list-style: none}
+        a{text-decoration: none;color: blue}
+        a:hover{text-decoration: underline;color: red}
+
+        .v_show{width: 595px;height: 230px;margin: 3em;border: 1px solid #ccc;border-radius: 0.3em}
+        .v_caption{height: 35px;background: url("img/btn_cartoon.gif") repeat-x 0 0;z-index: 1}
+        .v_caption h2{background: url("img/btn_cartoon.gif") no-repeat;width: 84px;height:35px;
+            overflow: hidden;background-position: 0 -100px;text-indent:-9999px;float: left; }
+        .tips{margin-left: 10px;display: block;float: left}/*float:left重要性！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！*/
+        .tips span{display: inline;padding-left: 12px;background: url("img/btn_cartoon.gif") no-repeat 0 -320px;float: left;margin-top: 13.5px;text-indent: -9999px;}
+        .tips span.current{background: url("img/btn_cartoon.gif")no-repeat 0 -220px;}
+        .change_btn{float: left;margin: 6px 0 0 6px;}
+        .change_btn span{display: block;float: left;width: 30px;height: 23px;background: url("img/btn_cartoon.gif")no-repeat;text-indent: -999em;cursor: pointer}
+        .change_btn .prev{background-position:0 -400px;}
+        .change_btn .next{background-position: -31px -400px;}
+        .v_caption em{float: right;font-size: 13px;margin: 10px 12px 0 0;}
+        .v_content{width: 592px;height:190px;overflow: hidden;position: relative}
+        .v_content_list{width: 2500px;position: absolute;top: 0;left: 0;}           /*定位的重要性！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！*/
+        .v_content ul li{float: left; margin:10px 2px 0;padding: 8px;}                  /*margin+padding 评分重要性！！！！！！！！！！！！！！！！！！！！！！11*/
+        .v_content h4{font-size: 13px;margin-top: 20px;font-weight: inherit;margin-bottom: 3px;}
+        .v_list em,span{font-size: 12px;padding-top: 3px;}
+    </style>
+
+</head>
+
+<body>
+<div class="v_show">
+    <div class="v_caption">
+        <h2>卡动漫</h2>
+        <div class="tips">
+            <span class="current">1</span><span>2</span><span>3</span><span>4</span>
+        </div>
+        <div class="change_btn">
+            <span class="prev">prev</span>
+            <span class="next">next</span>
+        </div>
+        <em><a href="#">更多>></a></em>
+    </div>
+
+    <div class="v_content">
+        <div class="v_content_list">
+            <ul>
+                <li><a href="#"><img src="img/01.jpg" alt="海贼王" /></a><h4><a href="#">海贼王</a></h4><span>播放：<em>28,276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="海贼王" /></a><h4><a href="#">海贼王</a></h4><span>播放：<em>28,276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="海贼王" /></a><h4><a href="#">海贼王</a></h4><span>播放：<em>28,276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="海贼王" /></a><h4><a href="#">海贼王</a></h4><span>播放：<em>28,276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="蜡笔小新" /></a><h4><a href="#">蜡笔小新</a></h4><span>播放：<em>28,276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="蜡笔小新" /></a><h4><a href="#">蜡笔小新</a></h4><span>播放：<em>28，276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="蜡笔小新" /></a><h4><a href="#">蜡笔小新</a></h4><span>播放：<em>28，276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="蜡笔小新" /></a><h4><a href="#">蜡笔小新</a></h4><span>播放：<em>28，276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="火影忍者" /></a><h4><a href="#">火影忍者</a></h4><span>播放：<em>28，276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="火影忍者" /></a><h4><a href="#">火影忍者</a></h4><span>播放：<em>28，276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="火影忍者" /></a><h4><a href="#">火影忍者</a></h4><span>播放：<em>28，276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="火影忍者" /></a><h4><a href="#">火影忍者</a></h4><span>播放：<em>28，276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="龙珠" /></a><h4><a href="#">龙珠</a></h4><span>播放：<em>28，276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="龙珠" /></a><h4><a href="#">龙珠</a></h4><span>播放：<em>28，276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="龙珠" /></a><h4><a href="#">龙珠</a></h4><span>播放：<em>28，276</em></span></li>
+                <li><a href="#"><img src="img/01.jpg" alt="龙珠" /></a><h4><a href="#">龙珠</a></h4><span>播放：<em>28，276</em></span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var page=1;
+        var i=4;
+        $("span.next").click(function () {
+            var $parent=$(this).parents("div.v_show");
+            var $v_show=$parent.find("div.v_content_list");
+            var $v_content=$parent.find("div.v_content");
+            var v_width=$v_content.width();
+            var len=$v_show.find("li").length;
+            var page_count=Math.ceil(len/i);
+            if(!$v_show.is(":animated")) {
+                if (page == page_count) {
+                    $v_show.animate({left: "0px"}, "slow");
+                    page = 1;
+                } else {
+                    $v_show.animate({left: "-=" + v_width}, "slow");
+                    page++;
+                }
+                $(".tips span").eq((page - 1)).addClass("current").siblings().removeClass();
+            }
+        });
+        $("span.prev").click(function () {
+            var $v_show=$("div.v_content_list");
+            var $v_content=$("div.v_content");
+            var v_width=$v_content.width();
+            var len=$v_show.find("li").length;
+            var page_count=Math.ceil(len/i);
+            if(!$v_show.is(":animated")) {
+                if(page==1){
+                    $v_show.animate({left:"-="+v_width*(page_count-1)},"slow");
+                    page=page_count
+                }else{
+                    $v_show.animate({left:"+="+v_width},"slow");
+                    page--
+                }
+                $(".tips span").eq((page - 1)).addClass("current").siblings().removeClass();
+            }
+        })
+    })
+</script>
+</body>
+</html>

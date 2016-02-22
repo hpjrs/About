@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上滑遮罩</title>
+    <style type="text/css">
+        *{margin:0;padding:0;font:normal 12px "微软雅黑";color:#000000;}
+       body{background: #ccc}
+       .img-wraper{width: 220px;height: 320px;background-color: white;margin: 0 auto;position:relative;overflow: hidden}
+       p,span{text-align: center}
+        p{font-size: 20px;}
+        span{color: #ff7031;font-size: 16px;display: block}
+        .mask{height: 100px;position: absolute;background-color: #ffb243;width: 220px;bottom:-100px}
+        .mask p{text-align: center;line-height: 100px}
+    </style>
+</head>
+<body>
+<div class="img-wraper">
+<a href="#"><img src="img/b.jpg"></a>
+ <p>学院风简介双肩包</p>
+    <span>59元</span>
+ <div class="mask">
+     <p>质量很好</p>
+ </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script>
+    $(function () {
+    $(".img-wraper").hover(function () {
+        $(".mask").stop().animate({"bottom":"0"},300)
+    }, function () {
+        $(".mask").stop().animate({"bottom":"-100px"},300)
+    })
+    })
+</script>
+</body>
+</html>

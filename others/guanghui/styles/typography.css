@@ -1,0 +1,49 @@
+p.telephone{
+    font-size: 15px;
+}
+#nav .menu,.mainnav{
+    font-size: 17px;
+}
+.menu dl>dt{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing:5px;
+    text-indent:15px;
+}
+.dd_five,.dd_eight{
+    letter-spacing:1px !important;
+}
+.menu dl dd span a{
+    line-height: 45px;
+    font-size: 15px;
+}
+#nav .wrap .mainnav ul li a{
+    font-size: 16px;
+}
+.price p,.product p,.time p{
+    font-size: 15px;
+    line-height: 25px;
+}
+.price table{
+    font-size:  14px;
+}
+.u_position a{
+    font-size: 14px;
+    color: #737373;
+}
+.paper_introduce p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.paper_introduce p strong span{
+    color: #ff6135;
+}
+.jianjie p,.jianjie h4{
+    text-indent: 2em;
+    color: #333333;
+}
+.jianjie h4{
+    padding:10px;
+    font-size: 15px;
+    color: #eb2800;
+}

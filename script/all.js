@@ -9,11 +9,12 @@ $(function () {
             switch(index){
                 case 1:
                     $(".section1 .p-right,.p-left").animate({
-                        "margin-left":"0"
-                    },600);
+                        "margin-left":"0",
+                        "opacity":"1",
+                        "filter":"alpha(opacity=100)"
+                    },500);
                     break;
                 case 2:
-                        $(".section2 .tag p").trigger("mouseover");
                     break;
                 case 3:
                      break;
@@ -25,10 +26,14 @@ $(function () {
           switch (index){
               case 1:
                   $(".section1 .p-right").css({
-                      "margin-left":"300em"
+                      "margin-left":"-30em",
+                      "opacity":"0",
+                      "filter":"alpha(opacity=0)"
                   });
                   $(".section1 .p-left").css({
-                      "margin-left":"-300em"
+                      "margin-left":"30em",
+                      "opacity":"0",
+                      "filter":"alpha(opacity=0)"
                   });
                   break;
               case  2:
@@ -42,8 +47,9 @@ $(function () {
         afterRender: function () {
             $(".section1 .p-right,.p-left").animate({
                 "margin-left":"0",
-                "opacity":"1"
-            },600);
+                "opacity":"1",
+                "filter":"alpha(opacity=100)"
+            },500);
         }
     })
 });
