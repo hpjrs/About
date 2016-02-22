@@ -116,12 +116,12 @@ p{
 .opc2{
     left:430px;
     opacity: 0.4;
-    filter: alpha(opacity=80);
+    filter: alpha(opacity=40);
 }
 .opc3{
     left:1120px;
     opacity: 0.4;
-    filter: alpha(opacity=80);
+    filter: alpha(opacity=40);
 }
 .opc4{
     right:83px;
