@@ -102,7 +102,8 @@ body{
 }
 .section3 .timeline{
     position: relative;
-    margin: 0 auto;
+    left: 50%;
+    margin-left: -625px;
     background:url('../img/22.png') no-repeat 150px 80px;
     width:1250px;
     height:200px;
@@ -302,7 +303,7 @@ h1 span{
     font-size:3em;
     color: #ffc343;
 }
-/*
+
 @media screen and (max-width:568px){
     .section1 img{
         position:relative;
@@ -355,5 +356,5 @@ h1 span{
         font-size: 10em;
     }
 }
-*/
+
 
